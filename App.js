@@ -1,7 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
+import { ScaledSheet } from 'react-native-size-matters';
+
+
 
 export default function App() {
   return (
@@ -10,7 +13,7 @@ export default function App() {
         <View style={styles.head}>
             {/****-----------  Header -----------******/}
           <LinearGradient 
-            colors={['#dbb73b', '#f2e4b7']} 
+            colors={['#dbb73b', '#f2e4b7']}
             style={styles.headBG}>
         
             <Text style={styles.headText}>Green Creative</Text>
@@ -60,47 +63,46 @@ export default function App() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
+// const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#679159',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center', 
+    padding: '10@s',
   },
-
   border:{
     backgroundColor: 'rgba(250, 250, 250, 0.5)',
-    padding: 20,
-    borderRadius: 20,
-    width: '90%',
-    height: '90%',
-    
+    padding: '6@s',
+    borderRadius: '15@s',
+    width: '450@ms' 
   },
+
   head: {
-    width: '100%', 
+    height: '100@msr0.2',
   },
   headBG: {
-    padding: 18,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
+    padding: '10@s',
+    
+   
   },
   headText:{
     fontFamily: 'Arial',
-    fontSize: 37,
+    fontSize: '17@s',
     fontWeight: 'bold',
     color: '#283823'
   },
   subHead:{
     fontFamily: 'Helvetica',
-    fontSize: 17,
+    fontSize: '7.7@s',
     fontWeight: 'bold',
     color:'#679159'
 
   },
 
   nav:{
-    flex: 0.1
+    height: '50@ms0.1',
   },
   navBG:{
     flex: 1,
@@ -110,43 +112,40 @@ const styles = StyleSheet.create({
   }, 
   navText:{
     fontFamily: 'Trebuchet MS',
+    fontWeight: 'bold',
     color: '#fff',
-    fontWeight: '900',
-    fontSize: 14,
+    fontSize: '7@s'
   },
 
   body:{
-    flex: 0.8,
     backgroundColor: '#fff',
-    borderBottomLeftRadius: 15,
-    borderBottomRightRadius: 15,
-    padding: 15,
+    borderBottomLeftRadius: '10@s',
+    borderBottomRightRadius: '10@s',
+    padding: '7@s',  
   },
-  bodyBG:{
-    height: '100%'
-  },
+
   bodyHeadBG:{
-    paddingHorizontal:18,
-    paddingVertical: 6,
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
+    height: '30@ms0.3',
+    paddingHorizontal: '7@s',
+    paddingVertical: '3@s',
+
   },
   bodyHead:{
     fontFamily: 'Trebuchet MS',
     fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: '8@s',
   },
   bodyText:{
     fontFamily: 'Trebuchet MS',
-    fontSize: 13,
-    lineHeight: 25,
-    marginTop: 5,
-    marginBottom: 20,
+    fontSize: '6@s',
+    lineHeight: '12@s',
+    marginTop: '2@s',
+    marginBottom: '12@s',
   },
   link: {
     fontFamily: 'Trebuchet MS',
-    fontSize: 13,
-    marginBottom: 15,
+    fontSize: '6@s',
+    marginBottom: '10@s',
   },
 
   
