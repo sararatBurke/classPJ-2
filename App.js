@@ -16,9 +16,24 @@ export default function App() {
             <Text>Inspired by Creative Commons, licensed under Creative Commons.</Text>
           </LinearGradient>
         </View>
+
         <View>
           {/******  Nav ******/}
+          <LinearGradient
+            colors={['#866e18', '#dab536']}
+            style={styles.navBG}
+          >
+            <Text>home</Text>
+            <Text>about</Text>
+            <Text>portfolio</Text>
+            <Text>prices</Text>
+            <Text>products</Text>
+            <Text>faq</Text>
+            <Text>contact</Text>
+
+          </LinearGradient>
         </View>
+
         <View>
           {/******  Body ******/}
         </View>
@@ -48,4 +63,11 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
   },
+
+  navBG:{
+    flex: 1,
+    paddingVertical: 15,
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+  }
 });
