@@ -111,9 +111,9 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 20,
   },
   bodyHead:{
-    fontFamily: 'Helvetica',
+    fontFamily: 'Trebuchet MS',
     fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 18,
   },
   bodyText:{
     fontFamily: 'Verdana',
