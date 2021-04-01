@@ -12,8 +12,8 @@ export default function App() {
             colors={['#dbb73b', '#f2e4b7']} 
             style={styles.headBG}>
           {/******  Header ******/}
-            <Text>Green Creative</Text>
-            <Text>Inspired by Creative Commons, licensed under Creative Commons.</Text>
+            <Text style={styles.headText}>Green Creative</Text>
+            <Text style={styles.subHead}>Inspired by Creative Commons, licensed under Creative Commons.</Text>
           </LinearGradient>
         </View>
 
@@ -82,6 +82,19 @@ const styles = StyleSheet.create({
     padding: 15,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
+  },
+  headText:{
+    fontFamily: 'Arial',
+    fontSize: 37,
+    fontWeight: 'bold',
+    color: '#283823'
+  },
+  subHead:{
+    fontFamily: 'Helvetica',
+    fontSize: 17,
+    fontWeight: 'bold',
+    color:'#679159'
+
   },
 
   bodyGB:{
