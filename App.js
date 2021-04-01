@@ -35,18 +35,26 @@ export default function App() {
 
         <View style={styles.bodyGB}>
           {/******  Body ******/}
+          <LinearGradient colors={['#eaf0e7','#fbfcfb']} style={styles.bodyHeadBG}>
           <Text style={styles.bodyHead}>Template Usage</Text>
+          </LinearGradient>
             <Text style={styles.bodyText}>You may use this template on any site, anywhere, for free just please leave the link back to me in the footer. This template validates XHTML Strict 1.0, CSS Validates as well; enjoy `:)`</Text>
             <Text style={styles.bodyText}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer mi. Vivamus sit amet neque vitae sapien bibendum sodales. Curabitur elementum. Duis imperdiet. Donec eleifend porttitor sapien. Praesent leo. Quisque auctor velit sed tellus. Suspendisse potenti. Aenean laoreet imperdiet nunc. Donec commodo suscipit dolor. Aenean nibh. Sed id odio. Aliquam lobortis risus ut felis. Sed vehicula pellentesque quam.</Text>
             
             <TouchableOpacity>
               <Text>read more</Text>
             </TouchableOpacity>
-
-          <Text style={styles.bodyHead}>Another Title Goes Here!</Text>
+          <LinearGradient colors={['#eaf0e7','#fbfcfb']} style={styles.bodyHeadBG}>
+            <Text style={styles.bodyHead}>Another Title Goes Here!</Text>
+          </LinearGradient>
             <Text style={styles.bodyText}>This particular template goes not have a naviagation panel; it was intended for simple sites. I am also making a version of this template with navigation, check out BryantSmith.com to get it.</Text>
-
-          <Text style={styles.bodyHead}>Yet Another?</Text>
+            
+            <TouchableOpacity>
+              <Text>read more</Text>
+            </TouchableOpacity>
+          <LinearGradient colors={['#eaf0e7','#fbfcfb']} style={styles.bodyHeadBG}>
+            <Text style={styles.bodyHead}>Yet Another?</Text>
+          </LinearGradient>
             <Text style={styles.bodyText}>Each title is an H1 tag, so choose them carefully `:)`</Text>
         </View>
       </View>
@@ -82,6 +90,13 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15
   },
+  bodyHeadBG:{
+    flex:1,
+    paddingHorizontal:18,
+    paddingVertical: 6,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+  },
   bodyHead:{
     fontFamily: 'Helvetica',
     fontWeight: 'bold',
@@ -91,6 +106,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Verdana',
     fontSize: 12,
     lineHeight: 25,
+    marginTop: 5,
     marginBottom: 20,
   },
 
