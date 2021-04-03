@@ -134,7 +134,7 @@ const styles = ScaledSheet.create({
 
   bodyHeadBG:{
     height: '30@ms0.3',
-    paddingHorizontal: '7@s',
+    paddingHorizontal: '10@s',
     paddingVertical: '3@s',
 
     borderTopLeftRadius: 25,
@@ -144,12 +144,12 @@ const styles = ScaledSheet.create({
   bodyHead:{
     fontFamily: 'Trebuchet MS',
     fontWeight: 'bold',
-    fontSize: '8@s',
+    fontSize: '15@mvs1',
   },
   bodyText:{
     fontFamily: 'Trebuchet MS',
-    fontSize: '6@s',
-    lineHeight: '12@s',
+    fontSize: '12@mvs0.5',
+    lineHeight: '12@mvs4',
     marginTop: '2@s',
     marginBottom: '12@s',
   },
