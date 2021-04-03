@@ -69,33 +69,34 @@ const styles = ScaledSheet.create({
     flex: 1,
     backgroundColor: '#679159',
     alignItems: 'center',
-    justifyContent: 'center', 
-    padding: '10@s',
+    // justifyContent: 'center', 
+    padding: '5@s',
   },
   border:{
     backgroundColor: 'rgba(250, 250, 250, 0.5)',
-    padding: '6@s',
-    borderRadius: '15@s',
-    width: '450@ms' 
+    padding: '15@mvs0.1',
+    borderRadius: '40@mvs0.1',
+    width: '100%' 
   },
 
   head: {
-    height: '100@msr0.2',
+    marginTop: 12
   },
   headBG: {
+    height: '100@mvs0.2',
     padding: '10@s',
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
   },
   headText:{
     fontFamily: 'Arial',
-    fontSize: '17@s',
+    fontSize: '25@mvs1',
     fontWeight: 'bold',
     color: '#283823'
   },
   subHead:{
     fontFamily: 'Helvetica',
-    fontSize: '7.7@s',
+    fontSize: '20@mvs0.1',
     fontWeight: 'bold',
     color:'#679159'
 
@@ -118,6 +119,7 @@ const styles = ScaledSheet.create({
   },
 
   body:{
+    marginBottom: 12,
     backgroundColor: '#fff',
     borderBottomLeftRadius: '10@s',
     borderBottomRightRadius: '10@s',
