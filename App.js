@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import { ScaledSheet } from 'react-native-size-matters';
 
 
@@ -23,9 +23,13 @@ export default function App() {
 
         <View style={styles.nav}>
           {/******-----------  Nav  -----------******/}
+         
           <LinearGradient
             colors={['#866e18', '#dab536']}
             style={styles.navBG}>
+             <ScrollView
+             horizontal={true} 
+             showsHorizontalScrollIndicator={false}>
             <Text style={styles.navText}>home</Text>
             <Text style={styles.navText}>about</Text>
             <Text style={styles.navText}>portfolio</Text>
@@ -33,8 +37,9 @@ export default function App() {
             <Text style={styles.navText}>products</Text>
             <Text style={styles.navText}>faq</Text>
             <Text style={styles.navText}>contact</Text>
-
+            </ScrollView>
           </LinearGradient>
+          
         </View>
 
         <View style={styles.body}>
@@ -115,7 +120,8 @@ const styles = ScaledSheet.create({
     fontFamily: 'Trebuchet MS',
     fontWeight: 'bold',
     color: '#fff',
-    fontSize: '7@s'
+    fontSize: 20,
+    marginHorizontal: 32.5
   },
 
   body:{
