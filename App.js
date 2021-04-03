@@ -30,13 +30,13 @@ export default function App() {
              <ScrollView
              horizontal={true} 
              showsHorizontalScrollIndicator={false}>
-            <Text style={styles.navText}>home</Text>
-            <Text style={styles.navText}>about</Text>
-            <Text style={styles.navText}>portfolio</Text>
-            <Text style={styles.navText}>prices</Text>
-            <Text style={styles.navText}>products</Text>
-            <Text style={styles.navText}>faq</Text>
-            <Text style={styles.navText}>contact</Text>
+            <TouchableOpacity><Text style={styles.navText}>home</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navText}>about</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navText}>portfolio</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navText}>prices</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navText}>products</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navText}>faq</Text></TouchableOpacity>
+            <TouchableOpacity><Text style={styles.navText}>contact</Text></TouchableOpacity>
             </ScrollView>
           </LinearGradient>
           
