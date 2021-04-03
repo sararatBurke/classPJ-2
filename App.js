@@ -84,8 +84,8 @@ const styles = ScaledSheet.create({
   },
   headBG: {
     padding: '10@s',
-    
-   
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
   },
   headText:{
     fontFamily: 'Arial',
@@ -128,6 +128,9 @@ const styles = ScaledSheet.create({
     height: '30@ms0.3',
     paddingHorizontal: '7@s',
     paddingVertical: '3@s',
+
+    borderTopLeftRadius: 25,
+    borderTopRightRadius: 25,
 
   },
   bodyHead:{
