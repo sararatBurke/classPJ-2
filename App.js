@@ -44,6 +44,7 @@ export default function App() {
 
         <View style={styles.body}>
           {/******-----------  Body  -----------******/}
+          <ScrollView>
           <LinearGradient colors={['#eaf0e7','#fbfcfb']} style={styles.bodyHeadBG}>
           <Text style={styles.bodyHead}>Template Usage</Text>
           </LinearGradient>
@@ -63,6 +64,7 @@ export default function App() {
             <Text style={styles.bodyHead}>Yet Another?</Text>
           </LinearGradient>
             <Text style={styles.bodyText}>Each title is an H1 tag, so choose them carefully `:)`</Text>
+          </ScrollView>
         </View>
       </View>
     </View>
